@@ -1,0 +1,54 @@
+﻿<UserControl x:Name="userControl" x:Class="UnityRefactorHelper.View.SyncProjectControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UnityRefactorHelper"
+             mc:Ignorable="d" 
+             Foreground="{DynamicResource VsBrush.WindowText}"
+             d:DesignHeight="67.669" d:DesignWidth="300">
+
+    <DockPanel x:Name="syncHolder" Margin="10,0,10,5" VerticalAlignment="Top">
+        <Button x:Name="removeBtn" Content="Remove" VerticalAlignment="Top" HorizontalAlignment="Left" Click="removeBtn_Click" BorderThickness="0" BorderBrush="{x:Null}" Margin="0" Background="{x:Null}" Foreground="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" Cursor="Hand">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Transparent"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="syncBtn" Padding="5,0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" Cursor="Hand" Click="syncBtn_Click" Margin="10,0,0,0" VerticalAlignment="Top">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Transparent"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <TextBlock x:Name="syncBtnText" TextWrapping="Wrap" Text="{Binding LabelText, ElementName=userControl, Mode=OneWay}" HorizontalAlignment="Left" Foreground="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}"></TextBlock>
+        </Button>
+    </DockPanel>
+</UserControl>
