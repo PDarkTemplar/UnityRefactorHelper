@@ -1,6 +1,8 @@
 # Unity Refactor Helper
 Visual Studio 2015 helper extension for Unity script refactoring.
 
+<a href="https://visualstudiogallery.msdn.microsoft.com/87cc3382-41b0-42d8-83fc-a5ba53b13cd3">Download</a>
+
 This extension will be helpful if you keep Unity scripts in separate libraries. Extension works only with C#. Scripts references in the scenes and prefabs will be broken after refactoring (changing namespace or class name). This extension monitors changes in project files and update scene and prefab files after assembly build. 
 
 Set the asset serialization to force text and version control to visible Meta files in Unity (<b>Edit -> Project Settings -> Editor</b>).
