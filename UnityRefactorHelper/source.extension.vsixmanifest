@@ -4,6 +4,7 @@
     <Identity Id="UnityRefactorHelper.DarkTemplar.aa68aa1e-5f01-467e-90d5-0291f7799103" Version="1.0" Language="en-US" Publisher="Dark_Templar" />
     <DisplayName>Unity Refactor Helper</DisplayName>
     <Description xml:space="preserve">Helper extension for Unity script refactoring</Description>
+    <MoreInfo>https://github.com/PDarkTemplar/UnityRefactorHelper</MoreInfo>
     <Icon>Resources\MainIcon.png</Icon>
   </Metadata>
   <Installation>
