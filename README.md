@@ -20,3 +20,6 @@ Visual Studio extension located at <b>View -> Other Windows -> Unity Refactor He
 
 #Additional Information
 You can edit project GUID by clicking on the project name in the watch projects. Extension creates two files (configuration and cache) in the *.sln file folder. It tracks file save and synchronize files after build if it is required. Tracking occurs only inside the library, file move tracking between libraries is not supported.
+
+#License
+MIT license
