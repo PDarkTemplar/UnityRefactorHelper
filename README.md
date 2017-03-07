@@ -1,5 +1,5 @@
 # Unity Refactor Helper
-Visual Studio 2015 helper extension for Unity script refactoring.
+Visual Studio 2015, 2017 helper extension for Unity script refactoring.
 
 <a href="https://visualstudiogallery.msdn.microsoft.com/87cc3382-41b0-42d8-83fc-a5ba53b13cd3">Download</a>
 
