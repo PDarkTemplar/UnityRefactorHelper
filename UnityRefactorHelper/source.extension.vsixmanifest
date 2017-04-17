@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="UnityRefactorHelper.DarkTemplar.aa68aa1e-5f01-467e-90d5-0291f7799103" Version="1.1" Language="en-US" Publisher="Dark_Templar" />
+    <Identity Id="UnityRefactorHelper.DarkTemplar.aa68aa1e-5f01-467e-90d5-0291f7799103" Version="1.2" Language="en-US" Publisher="Dark_Templar" />
     <DisplayName>Unity Refactor Helper</DisplayName>
     <Description xml:space="preserve">Helper extension for Unity script refactoring</Description>
     <MoreInfo>https://github.com/PDarkTemplar/UnityRefactorHelper</MoreInfo>
@@ -14,12 +14,11 @@
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-    <Dependency d:Source="Installed" Id="Microsoft.VisualStudio.MPF.15.0" DisplayName="Visual Studio MPF 15.0" Version="[14.0,16.0)" />
   </Dependencies>
   <Assets>
     <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
   </Assets>
   <Prerequisites>
-   <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0.25904.2,16.0)" DisplayName="Visual Studio core editor" />
-</Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0.25904.2,16.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
 </PackageManifest>

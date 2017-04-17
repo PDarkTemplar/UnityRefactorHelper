@@ -272,7 +272,7 @@ namespace UnityRefactorHelper.ViewModel
             {
                 CommonService.LoadSyncProjectsCache();
             }
-            catch (Exception ex)
+            catch
             {
             }
         }
